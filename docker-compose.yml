@@ -1,0 +1,11 @@
+version: "3"
+services:
+  laravel-onion-architecture:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    container_name: laravel-onion-architecture
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/usr/src/laravel-onion-architecture
